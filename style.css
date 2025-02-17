@@ -1,0 +1,243 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #101216;
+}
+
+/* NAVBAR */
+
+.navbar {
+  margin: 0 auto;
+  width: 98vw;
+  height: 6.2rem;
+  background-color: teal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  font-size: 14px;
+  color: rgb(238, 238, 238);
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  margin-right: 8rem;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: 4.5rem;
+}
+
+/* HERO SECTON */
+
+.hero-container {
+  width: 90vw;
+  height: 90vh;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hero-container img {
+  width: 48%;
+  border-radius: 8%;
+  height: 90%;
+  background-color: darkgreen;
+}
+
+.bio {
+  width: 48%;
+  gap: 0.8rem;
+  height: auto;
+  padding: 0 3rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.bio p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: rgb(173, 181, 189);
+}
+
+.bio h4 {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.bio h1 {
+  font-size: 62px;
+  font-weight: 600;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio-container {
+  background-color: darkgoldenrod;
+  width: 90vw;
+  height: 90vh;
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+}
+
+.portfolio-container h2 {
+  color: rgb(242, 204, 143);
+  font-size: 29px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.films {
+  width: 100%;
+  background-color: darkmagenta;
+  height: 80%;
+  display: flex;
+}
+
+.main-film {
+  background-color: black;
+  width: 40%;
+  height: 100%;
+}
+
+.film-li {
+  background-color: white;
+  width: 40%;
+  height: 100%;
+  padding: 0 1rem;
+}
+
+.li-header {
+  background-color: rgb(244, 195, 59);
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-title {
+  font-weight: bold;
+}
+
+.li-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 40%;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.li-item img {
+  width: 6.5rem;
+  height: 4rem;
+}
+
+/* FILMOGRAPHY SECTION */
+
+.filmography-container {
+  width: 90vw;
+  height: auto;
+  background-color: darkred;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me {
+  height: 100%;
+  width: 40%;
+  background-color: darkgray;
+}
+
+.about-me h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
+.about-me p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.about-me li,
+.filmography li {
+  list-style: square;
+  text-transform: uppercase;
+  color: rgb(242, 204, 143);
+  font-size: 2rem;
+  margin: 2rem auto;
+}
+
+.about-me li span,
+.filmography li span {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.filmography {
+  height: 100%;
+  width: 55%;
+  background-color: darkgoldenrod;
+}
+
+.card {
+  width: 80%;
+  height: 30vh;
+  background-color: darkgrey;
+  margin: 1rem auto;
+  background-color: rgb(16, 18, 22);
+  border: 2px solid rgb(68, 71, 70);
+  border-radius: 8px;
+  color: rgb(173, 181, 189);
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card-icon {
+  width: 3rem;
+  height: 3rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.card-content span {
+  font-size: 12px;
+}
+
+.card-content h2 {
+  color: white;
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.card-content h4 {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.card-content p {
+  margin: 5px 0;
+}
