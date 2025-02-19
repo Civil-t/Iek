@@ -4,7 +4,12 @@
   box-sizing: inherit;
 }
 
+html,
 body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
   background-color: #101216;
 }
 
@@ -12,9 +17,8 @@ body {
 
 .navbar {
   margin: 0 auto;
-  width: 98vw;
+  width: 98.6vw;
   height: 6.2rem;
-  background-color: teal;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,15 +32,15 @@ body {
   list-style: none;
   margin-right: 8rem;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 50nav0;
   text-transform: uppercase;
 }
 
 .logo {
-  width: 5rem;
-  height: 5rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
-  margin-left: 4.5rem;
+  margin: 4.5rem;
 }
 
 /* HERO SECTON */
@@ -44,7 +48,7 @@ body {
 .hero-container {
   width: 90vw;
   height: 90vh;
-  margin: 2rem auto;
+  margin: 2rem auto 5rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -52,10 +56,9 @@ body {
 }
 
 .hero-container img {
-  width: 48%;
+  width: 35%;
   border-radius: 8%;
   height: 90%;
-  background-color: darkgreen;
 }
 
 .bio {
@@ -89,14 +92,13 @@ body {
 /* PORTFOLIO SECTION */
 
 .portfolio-container {
-  background-color: darkgoldenrod;
   width: 90vw;
   height: 90vh;
   gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: auto;
+  margin: 6rem auto;
 }
 
 .portfolio-container h2 {
@@ -108,14 +110,13 @@ body {
 
 .films {
   width: 100%;
-  background-color: darkmagenta;
-  height: 80%;
+  height: 87%;
   display: flex;
 }
 
-.main-film {
+.li-main {
   background-color: black;
-  width: 40%;
+  width: 100%;
   height: 100%;
 }
 
@@ -123,7 +124,6 @@ body {
   background-color: white;
   width: 40%;
   height: 100%;
-  padding: 0 1rem;
 }
 
 .li-header {
@@ -143,8 +143,20 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 40%;
-  width: 100%;
-  margin: 1rem 0;
+  width: 94%;
+  margin: 1rem auto;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.li-item:hover {
+  color: #b27f2a;
+  background-color: #f1f2f3;
 }
 
 .li-item img {
@@ -157,8 +169,8 @@ body {
 .filmography-container {
   width: 90vw;
   height: auto;
-  background-color: darkred;
-  margin: 2rem auto;
+  margin: 6rem auto;
+  gap: 2rem;
   display: flex;
   justify-content: space-between;
 }
@@ -166,7 +178,7 @@ body {
 .about-me {
   height: 100%;
   width: 40%;
-  background-color: darkgray;
+  color: white;
 }
 
 .about-me h4 {
@@ -179,15 +191,28 @@ body {
   font-size: 16px;
   font-weight: 400;
   line-height: 25px;
+  color: rgb(173, 181, 189);
+}
+
+.skills {
+  color: white;
 }
 
 .about-me li,
-.filmography li {
+.filmo-skills li,
+.education-container li {
   list-style: square;
+  letter-spacing: 2px;
   text-transform: uppercase;
   color: rgb(242, 204, 143);
-  font-size: 2rem;
-  margin: 2rem auto;
+  font-size: 1.3rem;
+  margin: 1.5rem auto;
+}
+
+.about-me li span,
+.filmo-skills li span,
+.education-container li span {
+  color: white;
 }
 
 .about-me li span,
@@ -196,17 +221,34 @@ body {
   font-weight: 600;
 }
 
+.filmo-skills {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
 .filmography {
-  height: 100%;
-  width: 55%;
-  background-color: darkgoldenrod;
+  height: auto;
+  margin-bottom: 2.5rem;
+  width: 100%;
+}
+
+.filmography img {
+  height: 60%;
+  width: 50%;
+}
+
+.card img {
+  height: 70%;
+  width: 70%;
 }
 
 .card {
-  width: 80%;
-  height: 30vh;
+  width: 94%;
+  height: auto;
   background-color: darkgrey;
-  margin: 1rem auto;
+  margin: 1rem 0;
   background-color: rgb(16, 18, 22);
   border: 2px solid rgb(68, 71, 70);
   border-radius: 8px;
@@ -221,6 +263,9 @@ body {
   height: 3rem;
   background-color: black;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card-content span {
@@ -240,4 +285,289 @@ body {
 
 .card-content p {
   margin: 5px 0;
+}
+
+.skills div {
+  margin: 0.5rem 0 1rem 0;
+}
+
+.background-bar {
+  background-color: #36383c;
+  width: 100%;
+  height: 0.3rem;
+  margin: 0.2rem 0;
+}
+
+.foreground-bar-adapt {
+  background-color: #fff;
+  width: 75%;
+  height: 100%;
+}
+
+.foreground-bar-crea {
+  background-color: #fff;
+  width: 90%;
+  height: 100%;
+}
+.foreground-bar-lead {
+  background-color: #fff;
+  width: 80%;
+  height: 100%;
+}
+
+.foreground-bar-coll {
+  background-color: #fff;
+  width: 88%;
+  height: 100%;
+}
+
+.foreground-bar-comm {
+  background-color: #fff;
+  width: 80%;
+  height: 100%;
+}
+
+/* Education Sec */
+
+.education-container {
+  width: 90vw;
+  height: auto;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.education-container h2 {
+  margin: 0.4rem 0 1rem 0;
+}
+
+.education-container .card {
+  width: 97%;
+  margin: 2rem 0 0 0;
+  height: auto;
+}
+
+.education-container li {
+  margin: auto 0;
+}
+
+/* Roles Sec */
+
+.roles-container {
+  width: 90vw;
+  height: auto;
+  margin: 6rem auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.roles-container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.roles-header {
+  margin: 0 auto;
+}
+
+.underline {
+  width: 3.5rem;
+  height: 56%;
+  border: 3px solid rgb(242, 204, 143);
+}
+
+.roles {
+  width: 100%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.roles h3 {
+  color: white;
+  font-size: 1.3rem;
+  margin: 1rem 0 0 0;
+}
+
+.role-card {
+  background-color: rgb(22, 23, 27);
+  border: 2px solid rgb(68, 71, 70);
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  height: 226px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.icon-holder {
+  background-color: rgb(242, 204, 143);
+  border-radius: 10px;
+  font-size: 35px;
+  height: 70px;
+  width: 70px;
+  z-index: 100;
+}
+
+.cam-assis-icon {
+  color: black;
+}
+
+.icon-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.roles img {
+  height: 50%;
+  width: 50%;
+}
+
+/* Contact Container */
+
+.contact-background {
+  width: 100%;
+  height: 110vh;
+  background-color: #16171b;
+  align-items: center;
+  display: flex;
+}
+
+.contact-container {
+  width: 90vw;
+  height: auto;
+  margin: 6rem auto;
+  display: flex;
+  gap: 1.8rem;
+}
+
+.intouch-card {
+  color: white;
+  width: 40%;
+}
+
+.intouch-card,
+.footer-container span {
+  color: rgb(173, 181, 189);
+}
+
+.intouch-card h2 {
+  margin-bottom: 2px;
+}
+
+.intouch-card h3 {
+  font-size: 1.8rem;
+}
+
+.intouch-icon {
+  width: 4rem;
+  height: 4rem;
+  background-color: #101216;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intouch-icon img {
+  width: 40%;
+  height: 40%;
+}
+
+.intouch-details {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  width: 90%;
+  margin: 1.2rem 0;
+}
+
+.form {
+  padding: 1rem 1.2rem;
+  letter-spacing: 0.0625rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+  height: 500px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 0.625rem;
+  color: rgb(135, 142, 153);
+  background-color: rgb(16, 18, 22);
+  border: 2px solid #444746;
+  margin: auto;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid rgb(68, 71, 70);
+  background-color: transparent;
+  color: white;
+  border-radius: 8px;
+  min-height: 50px;
+  width: 97%;
+  margin: 1rem 0;
+  outline: none;
+  padding: 0 0.5rem;
+}
+
+.form textarea {
+  resize: none;
+  min-height: 8rem;
+  padding-top: 0.7rem;
+}
+
+.form button {
+  height: 2rem;
+  border-radius: 0.375rem;
+  border: none;
+  width: auto;
+  color: rgb(16, 18, 22);
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.9375rem 2.1875rem;
+  max-width: 100%;
+  background-color: rgb(242, 204, 143);
+}
+
+.form button:hover {
+  background-color: transparent;
+  border: 2px solid rgb(242, 204, 143);
+  color: rgb(242, 204, 143);
+}
+
+#name-number {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 98%;
+  gap: 2rem;
+  margin: 0;
+}
+
+/* Footer */
+
+.footer-container {
+  height: 12rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.footer-logo {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
 }
