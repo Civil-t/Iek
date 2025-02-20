@@ -32,7 +32,7 @@ body {
   list-style: none;
   margin-right: 8rem;
   letter-spacing: 2px;
-  font-weight: 50nav0;
+  font-weight: 500;
   text-transform: uppercase;
 }
 
@@ -98,6 +98,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin: 6rem auto;
 }
 
@@ -112,10 +113,10 @@ body {
   width: 100%;
   height: 87%;
   display: flex;
+  margin: 0 auto;
 }
 
 .li-main {
-  background-color: black;
   width: 100%;
   height: 100%;
 }
@@ -173,6 +174,7 @@ a {
   gap: 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .about-me {
@@ -234,14 +236,9 @@ a {
   width: 100%;
 }
 
-.filmography img {
-  height: 60%;
-  width: 50%;
-}
-
 .card img {
-  height: 70%;
-  width: 70%;
+  height: 55%;
+  width: 55%;
 }
 
 .card {
@@ -570,4 +567,118 @@ a {
   border-radius: 50%;
   height: 5rem;
   width: 5rem;
+}
+
+/* Responsiveness */
+
+@media (max-width: 992px) {
+  .nav-menu {
+    /* margin-right: 2rem; */
+    margin-right: 12%;
+    gap: 6%;
+  }
+
+  .logo {
+    margin: 0 15%;
+  }
+
+  .hero-container {
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .hero-container img {
+    width: 75%;
+    height: 110vh;
+  }
+
+  .bio {
+    width: 70%;
+  }
+
+  .bio h1 {
+    font-size: 55px;
+    font-weight: 400;
+  }
+
+  .portfolio-container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .films {
+    width: 100%;
+    height: 100%;
+  }
+
+  .films a {
+    width: 60%;
+    height: 50%;
+  }
+
+  .film-li a {
+    height: 50%;
+    width: 90%;
+  }
+
+  .li-item img {
+    width: 35%;
+    height: 5%;
+  }
+
+  .filmography-container {
+    flex-direction: column;
+  }
+
+  .about-me {
+    width: 80%;
+  }
+
+  .about-me p {
+    line-height: 22px;
+  }
+
+  .filmo-skills {
+    width: 80%;
+  }
+
+  .filmography {
+    width: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-menu {
+    display: none;
+  }
+  .portfolio-container {
+    margin: 4rem auto;
+  }
+  .roles {
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+  }
+
+  .about-me,
+  .filmo-skills {
+    width: 100%;
+  }
+
+  .contact-background {
+    height: auto;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    height: auto;
+    margin: 4rem auto;
+  }
+
+  .intouch-card {
+    width: 100%;
+  }
+
+  .form {
+    width: 94%;
+  }
 }
