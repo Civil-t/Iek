@@ -706,13 +706,11 @@ a {
 
 @media (max-width: 600px) {
   .bio {
-    background-color: antiquewhite;
     width: 88%;
     padding: 0 1rem;
   }
   .bio h1 {
     font-size: 44px;
-    background-color: red;
     width: 100%;
   }
 
@@ -725,7 +723,6 @@ a {
     height: 65%;
     padding: 0;
     flex-direction: column;
-    background-color: aqua;
   }
 
   .films a {
@@ -766,7 +763,6 @@ a {
 
   .hero-container,
   .portfolio-container {
-    background-color: rebeccapurple;
     width: 95%;
     padding: 0;
   }
@@ -774,8 +770,8 @@ a {
 
 @media (max-width: 412px) {
   .navbar {
-    background-color: teal;
     width: 100vw;
+    margin: 0 0 1rem 0;
   }
 
   .logo {
@@ -792,12 +788,8 @@ a {
   .filmography-container,
   .portfolio-container,
   .hero-container {
-    margin: 1rem auto;
+    margin: 2rem auto;
     height: auto;
-  }
-
-  .filmography-container {
-    background-color: darkcyan;
   }
 
   .hero-container {
@@ -816,24 +808,63 @@ a {
 
   .bio p {
     line-height: 2.2rem;
-    background-color: green;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     width: 98%;
     margin: 0 auto;
   }
 
-  .about-me {
-    background-color: olivedrab;
-  }
-
   .about-me p {
-    background-color: greenyellow;
+    line-height: 2.2rem;
+    font-size: 1.1rem;
     width: 100%;
     margin: 0 auto;
   }
 
   .card {
-    width: 90%;
+    width: 80%;
     margin: 1rem auto;
+    gap: 1rem;
+    padding: 0.25rem;
+    line-height: 1.2rem;
+  }
+
+  .education-container {
+    width: 97%;
+  }
+
+  .card-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .card img {
+    height: 60%;
+    width: 60%;
+  }
+
+  .card-content h2 {
+    font-size: 12px;
+    font-weight: 600;
+    width: 80%;
+  }
+
+  .roles {
+    margin: 1rem;
+  }
+
+  .roles h3 {
+    font-size: 1rem;
+  }
+
+  .role-card {
+    height: 180px;
+  }
+
+  .skills {
+    width: 98%;
+    margin: 0 auto;
+  }
+
+  .filmography .card {
+    width: 97%;
   }
 }
