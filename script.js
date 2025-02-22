@@ -1,3 +1,5 @@
+// Navabr Scrolling logic
+
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".nav-menu li[data-target]");
 
@@ -14,4 +16,16 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
   });
+});
+
+// Navabar appearance after scroll
+
+window.addEventListener("scroll", function () {
+  const navbar = document.querySelector(".navbar");
+
+  if (window.scrollY > 100) {
+    navbar.classList.add("scrolled"); // Apply the new styles
+  } else {
+    navbar.classList.remove("scrolled"); // Remove the styles when scrolling up
+  }
 });
