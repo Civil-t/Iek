@@ -36,6 +36,10 @@ body {
   text-transform: uppercase;
 }
 
+.nav-menu li:hover {
+  cursor: pointer;
+}
+
 .logo {
   width: 6rem;
   height: 6rem;
