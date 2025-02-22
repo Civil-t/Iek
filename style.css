@@ -724,6 +724,33 @@ a {
   .form {
     width: 94%;
   }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 0.8rem;
+    top: 1.8rem;
+    z-index: 1100;
+  }
+
+  .hamburger img {
+    width: 2rem;
+    height: auto;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+
+  .hamburger.active div:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+
+  .hamburger.active div:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active div:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
 }
 
 @media (max-width: 600px) {
@@ -773,10 +800,14 @@ a {
   }
 
   .filmography-container,
-  .portfolio-container,
-  .hero-container {
+  .portfolio-container {
     margin: 0.5rem auto;
     height: auto;
+  }
+
+  .hero-container {
+    height: auto;
+    margin: 6.5rem auto 0.5rem auto;
   }
 
   .card-content h2 {
@@ -808,14 +839,14 @@ a {
   }
 
   .filmography-container,
-  .portfolio-container,
-  .hero-container {
+  .portfolio-container {
     margin: 2rem auto;
     height: auto;
   }
 
   .hero-container {
-    margin: 0 0 1rem 0;
+    height: auto;
+    margin: 6.5rem auto 0.5rem auto;
   }
 
   .hero-container img {
